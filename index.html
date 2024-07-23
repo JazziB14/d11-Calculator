@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="bg-zinc-600">
+    <div class="h-3/4 w-3/4 mx-auto">
+<!-- I need 4 columns with small gaps between  -->
+        <main class="grid grid-cols-4 gap-2">
+
+    <!-- I need a box to display the numbers -->
+    <!-- the box should stretch across columns to show no empty gaps -->
+            <input class="border col-span-3 w-full text-4xl text-white font-bold bg-black rounded-lg border-8 border-yellow-300" id="output" type="text">
+
+    <!-- 16 buttons needed 0-9 with special characters -->
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btnClear">C</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btn1">1</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btn2">2</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btn3">3</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btnDivide">/</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btn4">4</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btn5">5</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btn6">6</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btnMultiply">*</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btn7">7</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btn8">8</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btn9">9</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btnMinus">-</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btn0">0</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btnDot">.</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btnSolve">=</button>
+            <button class="p-5 bg-orange-500 rounded-lg border-8 border-yellow-300 font-bold text-black text-3xl" id="btnAdd">+</button>
+        </main>
+        <!-- allows clear button to work -->
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
